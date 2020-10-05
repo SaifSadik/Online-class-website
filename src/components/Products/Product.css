@@ -1,0 +1,21 @@
+.product{
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+    margin-bottom: 5px;
+    padding-bottom: 25px;
+    margin-right: 5px;
+    color: black;
+}
+.product h1{
+    color: orangered;
+    font-weight: 400;
+}
+button{
+    background-color: goldenrod;
+    text-align: center;
+    padding: 5px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+
+}

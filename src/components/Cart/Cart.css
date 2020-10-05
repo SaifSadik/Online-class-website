@@ -1,0 +1,8 @@
+.order-summery{
+    background-color: lightgreen;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 5px;
+    padding:0 50px;
+    position: fixed;
+}
