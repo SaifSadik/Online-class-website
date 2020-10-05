@@ -1,7 +1,9 @@
 import React from 'react';
 import './Product.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Product = (props) => {
     console.log(props.course);
@@ -12,7 +14,12 @@ const Product = (props) => {
             <h1>{name}</h1>
             <h5>by: {teacher}</h5>
             <h5>${price}</h5>
-            <button onClick ={() => props.handleAddCourse(props.course)}> <FontAwesomeIcon icon={faShoppingCart}/> Enroll Now</button>
+            <>
+            <Button
+                variant="success" onClick={() => props.handleAddCourse(props.course)}>
+                <FontAwesomeIcon icon={faShoppingCart} /> Enroll Now
+                </Button>
+                </>
         </div>
     );
 };
